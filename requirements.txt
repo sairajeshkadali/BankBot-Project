@@ -1,0 +1,6 @@
+rasa
+flask
+flask-cors
+flask-jwt-extended
+requests
+pyyaml

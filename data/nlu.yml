@@ -1,0 +1,131 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi there
+      - good morning
+      - good afternoon
+      - hi
+      - yo
+      - hey there
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you later
+      - have a nice day
+      - cya
+      - talk to you later
+      - bye-bye
+
+  - intent: affirm
+    examples: |
+      - yes
+      - indeed
+      - of course
+      - that's right
+      - correct
+      - yup
+      - y
+      - yep
+      - that's it
+
+  - intent: deny
+    examples: |
+      - no
+      - never
+      - I don't think so
+      - not really
+      - nope
+      - n
+      - wrong
+      - not right
+
+  - intent: check_balance
+    examples: |
+      - What's my account balance?
+      - Can you tell me the balance in my [savings](account_type) account?
+      - I'd like to check my [checking](account_type) account balance
+      - show me my balance
+      - balance check for [savings](account_type)
+      - how much money is in my [checking](account_type) account?
+      - what's the balance on [savings](account_type)?
+      - current balance
+      - can I see my [current](account_type:checking) account balance?
+
+  - intent: transfer_money
+    examples: |
+      - I want to transfer [$500](amount) from my [savings](account_type) to my [checking](account_type) account
+      - transfer [$100](amount) to checking
+      - send [$25](amount) from savings
+      - move money
+      - transfer [1000 dollars](amount) to my [savings](account_type) account
+      - send [50](amount) to [checking](account_type)
+      - I need to move [200](amount)
+      - can you transfer [150](amount) from [checking](account_type) to [savings](account_type)?
+
+  - intent: find_atm
+    examples: |
+      - Where is the nearest ATM?
+      - find an ATM near [downtown](location)
+      - I need to find an ATM in [New York](location)
+      - ATM locator
+      - is there an ATM in [zip code 10001](location)?
+      - find nearest atm
+      - atm locator for [Springfield](location)
+
+  - intent: block_card
+    examples: |
+      - I lost my card, please block it
+      - Can you block my [debit](card_type) card?
+      - My [credit](card_type) card was stolen
+      - block my card
+      - please block my [credit card](card_type:credit)
+      - lock my [debit card](card_type:debit)
+
+  - intent: apply_for_loan
+    examples: |
+      - I'd like to apply for a loan
+      - How can I get a car loan?
+      - What's the process for a home loan?
+      - loan application
+      - I need a [personal loan](loan_type)
+      - can I get a loan?
+
+  - intent: check_transaction_status
+    examples: |
+      - what's the status of my transaction [T12345](transaction_id)?
+      - did my last transaction go through?
+      - check status for transaction [A-582](transaction_id)
+      - where is my transfer?
+      - check on transaction [882-B](transaction_id)
+
+  - intent: ask_interest_rate
+    examples: |
+      - What's the interest rate for a [savings](account_type) account?
+      - current interest rate for [checking](account_type)?
+      - interest rate on a car loan?
+      - what's the interest rate?
+
+  - intent: ask_branch_details
+    examples: |
+      - What are your branch hours?
+      - Is the [downtown](location) branch open on Saturday?
+      - branch details for [Springfield](location)
+      - where is your [Main Street](location) branch?
+      - phone number for the [downtown](location) branch
+
+  - intent: chitchat
+    examples: |
+      - how are you?
+      - are you a human?
+      - what's your name?
+      - you're smart
+      - tell me a joke
+      - what's the weather like?
+      - are you a bot?
+

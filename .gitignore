@@ -1,0 +1,22 @@
+# Python / venv
+venv/
+__pycache__/
+*.pyc
+
+# Rasa
+models/
+.rasa/
+results/
+.pytest_cache/
+*.db
+
+# Node.js / Vite
+frontend/node_modules/
+frontend/dist/
+frontend/.DS_Store
+frontend/.env.local
+npm-debug.log
+
+# OS
+.DS_Store
+Thumbs.db
